@@ -38,6 +38,7 @@ int search(struct student *school, int rn, int max){
 }
 
 int main(){
+    //Mahindra is the name of the struct because I am currently a B.Tech student at Mahindra University ;]
     struct student* mahindra = (struct student*)malloc(20 * sizeof(struct student));
     
     int last = -1;
@@ -63,6 +64,8 @@ int main(){
     char yaorne = 'y';
     
     while (yaorne == 'y'){
+        //this will continue until you want it to 
+        
                 printf("What operation you want to do: ");
                 scanf("%d", &choice);
                 printf("\n");
@@ -84,7 +87,9 @@ int main(){
                 }
             } else if (choice == 2){
                 //to display all the students
+                
                 if (last == -1){
+                    //-1 being there is nothing in the list
                     printf("There is no student in the list.\n");
                 }else {
                     display(mahindra, last);
